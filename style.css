@@ -2,7 +2,7 @@ body {
     background: rgb(190, 235, 247);
     color: rgb(23, 91, 137);
     padding: 10px;
-    font-family: arial;
+    font-family: cursive;
 }
 #all-contents {
   max-width: 800px;
@@ -16,11 +16,12 @@ nav {
    margin-bottom: 20px;
     display: flex;
     padding: 10px;
+    border-radius: 10px 100px / 120px;
 }
 h1 {
     display: flex;
     align-items: center;
-    color: rgb(221, 120, 194);
+    color: rgb(16, 104, 154);
     flex: 1;
     margin: 0;
 }
@@ -53,11 +54,91 @@ main {
     padding: 15px;
 }
 
+
+
+
+
 /* portfolio styles */
 #interests {
-    border: 4px silver ridge;
+    border: 4px rgb(230, 156, 227) ridge;
     padding: 8px;
 }
 h2, h3 {
     margin: 0px;
+}
+
+  /* portfolio styles */
+  .content h1 {
+    color: rgb(177, 132, 196);
+}
+
+#portfolio {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+#portfolio li {
+    background: #def6ff;
+    padding: 10px;
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+
+#portfolio li:hover {
+    background: #eca4ed;
+}
+
+#portfolio a {
+    text-decoration: none;
+    color: #195684;
+}
+
+/* responsive web design */
+@media screen and (min-width: 120px) and (max-width: 1080px) {
+    main {
+      height: 100ch;
+      zoom: 1.5;
+      display: grid;
+    }
+
+    h1 {
+      font-size: 44px;
+    }
+
+    h2 {
+      font-size: 42px;
+    }
+
+    h3 {
+      font-size: 36px;
+    }
+
+    #all-contents {
+      height: 100ch;
+      margin: none;
+    }
+
+    a {
+      font-size: 42px;
+    }
+
+    .sidebar {
+      margin-right: 0px;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .sidebar-img {
+      width: 100%;
+    }
+
+    p,
+    li {
+      font-size: 24px;
+    }
+
+    .content {
+      align-content: center;
+      justify-content: center;
+    }
 }
